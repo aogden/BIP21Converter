@@ -27,10 +27,29 @@
  */
 @interface BIP21Converter : NSObject
 
+/**
+ Create a URL for the provided BIT21Object using the BIP21 URI protocol
+ @param object The BIT21Object to be converted to a URL
+ @returns NSURL* A URL for the object
+ */
 + (NSURL*) encodeObject:(BIP21Object*)object;
 
+/**
+ Create a URL for the provided bitcoin parameters using the BIP21 URI protocol
+ @param address The bitcoin address
+ @param amount The amount in BTC
+ @param label The label for the payment
+ @param message The message for the payment
+ @param additionalParameter Any additional parameters you want conveyed in your URL
+ @returns NSURL* A URL for the object
+ */
 + (NSURL*) encodeAddress:(NSString*)address amount:(NSString*)amount label:(NSString*)label message:(NSString*)message additionalParameters:(NSDictionary*)params;
 
+/**
+ Create a BIP21Object decoded from the provided URL
+ @param url A BIP21 compliant url
+ @returns BIP21Object* an object containing the data from the URL
+ */
 + (BIP21Object*) decodeURL:(NSURL*)url;
 
 @end
