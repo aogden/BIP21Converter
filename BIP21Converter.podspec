@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BIP21Converter"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Encoding/Decoding library for the Bitcoin BIP 0021 URI scheme"
   s.description      = <<-DESC
                         This library provides an interface to encode and decode
