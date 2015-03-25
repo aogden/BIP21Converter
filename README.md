@@ -6,6 +6,8 @@
 
 BIP21Converter is a small class that handles encoding and decoding bitcoin URIs according to the scheme at https://en.bitcoin.it/wiki/BIP_0021
 
+These URIs are commonly used for QR code generation for payment requests
+
 ## Installation
 
 BIP21Converter is available through [CocoaPods](http://cocoapods.org). To install
